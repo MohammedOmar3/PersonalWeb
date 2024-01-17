@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a01562e53a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="sliding-background"></div>
+    <div class="container">
+        <nav>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <ul id="sidemenu">
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+                <li><a href="#header">< home ></a></li>
+                <li><a href="#about">< about ></a></li>
+                <li><a href="#services">< services ></a></li>
+                <li><a href="#portfolio">< portfolio ></a></li>
+                <li><a href="#contact">< contact ></a></li>
+            </ul>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </nav>
+        <div class="transparent"></div>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Mohammed</span> Omar</h1>
+            <p>Welcome to my page :)</p>
+        </div>
+    </div>
+</div>
+<!-----------About----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profilepicture.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">about me</h1>
+                <p>Greetings! I'm an enthusiastic software developer, driven by my passion for creating innovative solutions and optimizing user experiences. As a recent graduate and currently employed as a Software Engineer at Symology, I have had the privilege to contribute to projects and collaborate with talented professionals in the field. My journey into the world of software development began during my academic years, where I cultivated a deep understanding of programming languages, algorithms, and software design principles. I found immense joy in solving complex problems and turning ideas into functional applications.<br>Beyond my technical proficiency, I am a strong advocate for teamwork and effective communication. I firmly believe that collaboration and open dialogue foster creativity and lead to exceptional results.</p>
+                <p2><br></p2>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                    <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Development</span><br></li>
+                        <li><span>C#</span><br></li>
+                        <li><span>Python</span><br></li>
+                        <li><span>Java</span><br></li>
+                        <li><span>SQL</span><br></li>
+                        <li><span>ASP.NET</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Software Developer | Symology | Dunstable, UK</span><br>JAN 2023 - CURRENT<br>Developed critical features for asset management software using ASP.net, ensuring solutions aligned with business goals<br><br>Enhanced software reliability through the implementation of rigorous unit tests, emphasizing a commitment to producing stable solutions<br><br>Thrived in an agile sprint environment, contributing substantially each sprint through performance optimization, new feature implementation, and bug resolution<br><br>Conducted meticulous peer reviews, proactively identifying and rectifying issues in the early stages to ensure the submission of clean and efficient code.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor’s Degree in Computer Science</span><br>Aston University | Birmingham, UK</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------Services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">MY SERVICES</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum dolor sit amet, consectetur.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Software Design</h2>
+                <p>Lorem Ipsum dolor sit amet, consectetur.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Lorem Ipsum dolor sit amet, consectetur.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------Portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">PORTFOLIO</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/EEGProject.png">
+                <div class="layer">
+                    <h3>EEG_GA</h3>
+                    <p>Genetic Algorithm for EEG_Dataset Machine Learning</p>
+                    <a href="https://github.com/MohammedOmar3/EEG_GA" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/AdventOfCodeProject.png">
+                <div class="layer">
+                    <h3>Advent Of Code<br>Challenge</h3>
+                    <p>Taking on the www.adventcode.com challenge this year on an advent calender of small programming puzzles.</p>
+                    <a href="https://github.com/MohammedOmar3/AdventCode" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/PersonalWeb.png">
+                <div class="layer">
+                    <h3>Personal Web</h3>
+                    <p>Find the code to this personal website here.</p>
+                    <a href="https://github.com/MohammedOmar3/PersonalWeb" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/MohammedOmar3" target="_blank" class="btn">See More</a>
+    </div>
+</div>
+<!------------Contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> o.mohammed3@hotmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>07494140582</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/MohammedOmarCVNew.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Mohammed Omar. Made using Visual Studio Code.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.left = "0";
+    }
+    function closemenu(){
+        sidemenu.style.left = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbybIum28swMFsKsWK5PV4OZMI1qHtasdMvOMjKgNq6Wr2k2fEK8y_mD_0gBl0D3D1X5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
